@@ -20,9 +20,13 @@ name = input("What is your name?\n\n")
 print("Nice to meet you {}!\n".format(name))
 
 
-# first question
-# options argument can store the answer in it. It doesnt necessarily hold's a single answer, because it can hold multiple variations of an answer and can also hold different answers. 
+
+
+
+# Options argument can store the answer in it. It doesnt necessarily hold's a single answer, because it can hold multiple variations of an answer and can also hold different answers. 
+
 # But I will be using the options variable for one right answer and multiple variations of this right answer if necessary. 
+
 # The reason being because the person playing this quiz may put in the right answer but maybe with all caps or all lowercase.
 options = ["yes", "a", "b", "Yes", "Yes please".lower()]
 want_to_play = input("Would you like to play? \na) Yes\nb) Yes please\n\n")
@@ -39,7 +43,7 @@ else:
    
 
 # We have used the input() function to take the input of the user 
-# and also used the conditional statements (if, elif, and else) to check if the user's input is one of the choices. 
+# Also used the conditional statements (if, elif, and else) to check if the user's input is one of the choices. 
 user_input = ''
 
 # A while True loop was included in order to iterate until the user's input is the correct answer.
@@ -48,6 +52,7 @@ while True:
 
     if user_input == 'a':
         print("Correct, Genesis is the right answer!\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break                                                        
         # The break statement breaks out of the while True loop... 
@@ -82,7 +87,6 @@ while True:
     if user_input == 'a':
         print('Nope, wrong answer. Try again.\n')
         continue                                                        
-        # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
         print("Nope, wrong answer. Try again.\n")
         continue
@@ -92,8 +96,10 @@ while True:
         continue
     elif user_input == 'd':
         print("You got it right! Bethelhem is where Jesus Christ was born.\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break
+    # The break statement breaks out of the while True loop... 
     else:
         print("To choose your answer, please type either a, b, c or d (not in capitals, just lowercase).\n")
         continue
@@ -114,6 +120,7 @@ while True:
 
     if user_input == 'a':
         print("Good job! Joseph indeed had 11 Brothers.\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break                                                        
         # The break statement breaks out of the while True loop... 
@@ -148,15 +155,16 @@ while True:
     if user_input == 'a':
         print("Nope, wrong answer. Try again.\n")
         continue                                                        
-        # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
         print("Great job. God sent 10 plagues onto Egypt because the Phaoroh of Moses' time was not willing to let God's people (which is Israel) go.\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break
-        # ... As the continue statement continues the loop until the correct answer is entered.
+        # The break statement breaks out of the while True loop... 
     elif user_input == 'c':
         print("Nope, wrong answer. Try again.\n")
         continue
+    # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'd':
         print("Nope, wrong answer. Try again.\n")
         continue
@@ -181,15 +189,16 @@ while True:
     if user_input == 'a':
         print("Nope, wrong answer. Try again.\n")
         continue                                                        
-        # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
         print("Nope, wrong answer. Try again.\n")
         continue
         # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'c':
         print("Amazing work. Revelation is the last book of the Bible.\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break
+    # The break statement breaks out of the while True loop... 
     elif user_input == 'd':
         print("Nope, wrong answer. Try again.\n")
         continue
@@ -213,6 +222,7 @@ while True:
 
     if user_input == 'a':
         print("Correct.\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break                                                        
         # The break statement breaks out of the while True loop... 
@@ -247,7 +257,6 @@ while True:
     if user_input == 'a':
         print("Nope, wrong answer. Try again.\n")
         continue                                                        
-        # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
         print("Nope, wrong answer. Try again.\n")
         continue
@@ -257,8 +266,10 @@ while True:
         continue
     elif user_input == 'd':
         print("Correct.\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break
+    # The break statement breaks out of the while True loop... 
     else:
         print("To choose your answer, please type either a, b, c or d (not in capitals, just lowercase).\n")
         continue
@@ -280,15 +291,16 @@ while True:
     if user_input == 'a':
         print("Nope, wrong answer. Try again.\n")
         continue                                                        
-        # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
         print("Nope, wrong answer. Try again.\n")
         continue
         # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'c':
         print("Correct\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break
+    # The break statement breaks out of the while True loop... 
     elif user_input == 'd':
         print("Nope, wrong answer. Try again.\n")
         continue
@@ -313,12 +325,13 @@ while True:
     if user_input == 'a':
         print("Nope, wrong answer. Try again.\n")
         continue                                                        
-        # The break statement breaks out of the while True loop... 
+        # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'b':
         print("Correct.\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break
-        # ... As the continue statement continues the loop until the correct answer is entered.
+        # The break statement breaks out of the while True loop... 
     elif user_input == 'c':
         print("Nope, wrong answer. Try again.\n")
         continue
@@ -346,15 +359,16 @@ while True:
     if user_input == 'a':
         print("Nope, wrong answer. Try again.\n")
         continue                                                        
-        # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
         print("Nope, wrong answer. Try again.\n")
         continue
         # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'c':
         print("Congratulations, you got the final question right.\n")
+        # The score += 1 adds one to the score variable.
         score += 1
         break
+        # The break statement breaks out of the while True loop... 
     elif user_input == 'd':
         print("Nope, wrong answer. Try again.\n")
         continue
