@@ -1,0 +1,23 @@
+# The first question of the bible quiz! 
+
+
+user_input = ''
+
+while True:
+    user_input = input("Question 1).\nWhat is the first book of the bible?\na) Genesis b) Exodus c) Numbers d) Leviticus\n\n>>")
+
+    if user_input == 'a':
+        print('Correct, Genesis is the right answer!')
+        break
+    elif user_input == 'b':
+        print('Nope, wrong answer. Try again.')
+        continue
+    elif user_input == 'c':
+        print('Nope, wrong answer. Try again.')
+        continue
+    elif user_input == 'd':
+        print('Nope, wrong answer. Try again.')
+        continue
+    else:
+        print('To choose your answer, please type either a, b, c or d.')
+        continue

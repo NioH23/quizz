@@ -1,1 +1,29 @@
-print("hi")
+
+def check(options, user_input):
+    if user_input in options:
+        return True
+    else:
+        return False
+
+
+# 👇️ while loop with user input strings
+
+# This loop doesn't work yet so im trying to fix it so that I can use it to my advantage.
+books = ["genesis"]
+
+while True:
+    question_one = input("What is the first book of the bible?\na) Genesis b) Exodus c) Numbers d) Leviticus\n>>").lower()
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
