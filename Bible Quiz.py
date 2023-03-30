@@ -3,7 +3,6 @@
 #This quiz is based on the Bible. It consists of 10 questions, each question having four options and only one correct answer.
 
 
-
 # This is a function called check(). It requires 2 arguments. One list and one user input. It returns True if the user input is in the list. It returns False if the user input is not in the list.
 def check(options, user_input):
     if user_input in options:
@@ -12,6 +11,11 @@ def check(options, user_input):
         return False
 
 
+# The score variable will give a point/s to every question answered correctly, and at the end of the quiz it will add up your points to give your final score. 
+# At the moment the score variable is set to 0 as the person engaging in the quiz has not answered any questions correctly yet.
+score = 0
+
+ 
 name = input("What is your name?\n\n")
 print("Nice to meet you {}!\n".format(name))
 
@@ -44,6 +48,7 @@ while True:
 
     if user_input == 'a':
         print("Correct, Genesis is the right answer!\n")
+        score += 1
         break                                                        
         # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
@@ -87,6 +92,7 @@ while True:
         continue
     elif user_input == 'd':
         print("You got it right! Bethelhem is where Jesus Christ was born.\n")
+        score += 1
         break
     else:
         print("To choose your answer, please type either a, b, c or d (not in capitals, just lowercase).\n")
@@ -108,6 +114,7 @@ while True:
 
     if user_input == 'a':
         print("Good job! Joseph indeed had 11 Brothers.\n")
+        score += 1
         break                                                        
         # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
@@ -136,7 +143,7 @@ user_input = ''
 
 # A while True loop was included in order to iterate until the user's input is the correct answer.
 while True:
-    user_input = input("Question 4).\nHow many plagues did God send to Egype during Moses' time?\na) 7 \nb) 10 \nc) 23\nd) 9 plagues\n\n>> ")
+    user_input = input("Question 4).\nHow many plagues did God send to Egype during Moses' time?\na) 7 \nb) 10 \nc) 23\nd) 9\n\n>> ")
 
     if user_input == 'a':
         print("Nope, wrong answer. Try again.\n")
@@ -144,6 +151,7 @@ while True:
         # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
         print("Great job. God sent 10 plagues onto Egypt because the Phaoroh of Moses' time was not willing to let God's people (which is Israel) go.\n")
+        score += 1
         break
         # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'c':
@@ -180,6 +188,7 @@ while True:
         # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'c':
         print("Amazing work. Revelation is the last book of the Bible.\n")
+        score += 1
         break
     elif user_input == 'd':
         print("Nope, wrong answer. Try again.\n")
@@ -203,7 +212,8 @@ while True:
     user_input = input("Question 6).\nWhat is the 3rd commandment?\na) Do not use the Lord's name in vain\nb) Thou shall not have any gods before me\nc) You should not commit adultery\nd) Thou shall not kill\n\n>> ")
 
     if user_input == 'a':
-        print("Correct.")
+        print("Correct.\n")
+        score += 1
         break                                                        
         # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
@@ -247,6 +257,7 @@ while True:
         continue
     elif user_input == 'd':
         print("Correct.\n")
+        score += 1
         break
     else:
         print("To choose your answer, please type either a, b, c or d (not in capitals, just lowercase).\n")
@@ -276,6 +287,7 @@ while True:
         # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'c':
         print("Correct\n")
+        score += 1
         break
     elif user_input == 'd':
         print("Nope, wrong answer. Try again.\n")
@@ -304,6 +316,7 @@ while True:
         # The break statement breaks out of the while True loop... 
     elif user_input == 'b':
         print("Correct.\n")
+        score += 1
         break
         # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'c':
@@ -340,6 +353,7 @@ while True:
         # ... As the continue statement continues the loop until the correct answer is entered.
     elif user_input == 'c':
         print("Congratulations, you got the final question right.\n")
+        score += 1
         break
     elif user_input == 'd':
         print("Nope, wrong answer. Try again.\n")
@@ -351,7 +365,7 @@ while True:
 
 
 
-print("wow good job {}. Thank you for play my Bible quiz, hopefully you were able to learn something new about the Bible and Coding.".format(name))
+print("wow good job {} on getting {} correct. Thank you for play my Bible quiz, hopefully you were able to learn something new.".format(name, score))
 
 
 
